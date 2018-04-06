@@ -1,2 +1,8 @@
-export {suits, ranks} from "./constants"
-export {Card} from "./card"
+import './playingcards.css';
+import {suits, ranks} from "./constants"
+import {Card} from "./card"
+
+
+export {
+  suits, ranks, Card,
+};

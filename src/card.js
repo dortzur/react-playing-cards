@@ -8,5 +8,4 @@ export const Card = ({rank, suit}) => {
         return <FaceCard rank={rank} suit={suit}/>
     }
     return <NumberCard rank={rank} suit={suit}/>
-
 };
