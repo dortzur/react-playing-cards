@@ -1,5 +1,4 @@
 import React from 'react';
-import images from '../utils/images';
 import PropTypes from 'prop-types';
 
 export class FaceCard extends React.PureComponent {
@@ -8,7 +7,7 @@ export class FaceCard extends React.PureComponent {
   };
   render() {
     const { card } = this.props;
-    const image = images[`${card.rank.name}-${card.suit.name}`];
+    const image = require(`../img/faces/face-${card.rank.name}-${card.suit.name}.png`);
 
     return (
       <div className="card">

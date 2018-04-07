@@ -2,7 +2,8 @@ const HtmlWebPackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const path = require('path');
 
-const isDev = (process.env.NODE_ENV = 'development');
+const isDev = process.env.NODE_ENV === 'development';
+
 const externals = isDev
   ? {}
   : {
@@ -16,11 +17,13 @@ const externals = isDev
       },
     };
 module.exports = {
-  entry: isDev?'./demo/index.js':'./src/index.js',
+  entry: isDev ? './demo/index.js' : './src/index.js',
   output: {
     path: path.resolve(__dirname, 'lib'),
     filename: 'index.js',
     libraryTarget: 'umd',
+    library: 'reactPlayingCards',
+    globalObject: 'this',
   },
   externals,
   module: {
