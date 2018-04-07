@@ -7,7 +7,6 @@ export class FaceCard extends React.PureComponent {
   };
   render() {
     const { card } = this.props;
-    const image = require(`../img/faces/face-${card.rank.name}-${card.suit.name}.png`);
 
     return (
       <div className="card">
@@ -17,7 +16,9 @@ export class FaceCard extends React.PureComponent {
             <span>{card.suit.symbol}</span>
           </div>
           <span className="face middle_center">
-            <img src={image} />
+            <div
+              className={`face-image face-${card.rank.name}-${card.suit.name}`}
+            />
           </span>
           <div className="corner bottom">
             <span className="face">{card.rank.symbol}</span>

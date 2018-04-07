@@ -24,6 +24,52 @@
   position: relative;
   z-index: 2;
 }
+.face-image {
+  position: absolute;
+  left: 2.56em;
+  top: 2.08em;
+  width: 10.8em;
+  height: 18.24em;
+  background: no-repeat center;
+}
+.face-jack-club {
+  background-image: url('./img/faces/face-jack-club.png');
+}
+.face-jack-diamond {
+  background-image: url('./img/faces/face-jack-diamond.png');
+}
+.face-jack-heart {
+  background-image: url('./img/faces/face-jack-heart.png');
+}
+.face-jack-spade {
+  background-image: url('./img/faces/face-jack-spade.png');
+}
+
+.face-queen-club {
+  background-image: url('./img/faces/face-queen-club.png');
+}
+.face-queen-diamond {
+  background-image: url('./img/faces/face-queen-diamond.png');
+}
+.face-queen-heart {
+  background-image: url('./img/faces/face-queen-heart.png');
+}
+.face-queen-spade {
+  background-image: url('./img/faces/face-queen-spade.png');
+}
+
+.face-king-club {
+  background-image: url('./img/faces/face-king-club.png');
+}
+.face-king-diamond {
+  background-image: url('./img/faces/face-king-diamond.png');
+}
+.face-king-heart {
+  background-image: url('./img/faces/face-king-heart.png');
+}
+.face-king-spade {
+  background-image: url('./img/faces/face-king-spade.png');
+}
 .card.noshadow {
   -moz-box-shadow: none;
   -webkit-box-shadow: none;
