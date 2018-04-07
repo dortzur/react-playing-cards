@@ -46,7 +46,16 @@ module.exports = {
       },
       {
         test: /\.css$/,
-        use: [MiniCssExtractPlugin.loader, 'css-loader'],
+        use: [
+          MiniCssExtractPlugin.loader,
+          {
+            loader: 'css-loader',
+            options: {
+              modules: true,
+              localIdentName: '[local]--[hash:base64]',
+            },
+          },
+        ],
       },
       {
         test: /\.(woff|woff2|ttf|eot|svg)(\?[\s\S]+)?$/,

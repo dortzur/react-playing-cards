@@ -10,7 +10,10 @@
     "build": "NODE_ENV=production webpack --mode production",
     "prepublish": "npm run build"
   },
-  "files": ["lib", "src"],
+  "files": [
+    "lib",
+    "src"
+  ],
   "peerDependencies": {
     "prop-types": "^15.6.1",
     "react": "^16.3.1"
@@ -43,6 +46,7 @@
   "author": "Dor Tzur",
   "license": "LGPL-3.0",
   "dependencies": {
+    "classnames": "^2.2.5",
     "file-loader": "^1.1.11",
     "image-webpack-loader": "^4.2.0",
     "transfer-webpack-plugin": "^0.1.4"
