@@ -1,6 +1,9 @@
 import React from 'react';
-
+import PropTypes from 'prop-types';
 export class NumberCardCenter extends React.PureComponent {
+  static propTypes = {
+    card: PropTypes.object,
+  };
   render() {
     const { card } = this.props;
     switch (card.rank.name) {
@@ -115,4 +118,3 @@ export class NumberCardCenter extends React.PureComponent {
     }
   }
 }
-

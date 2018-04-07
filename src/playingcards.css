@@ -1,7 +1,10 @@
 @font-face {
   font-family: 'Suit-Regular';
-  src: url("./fonts/suit-regular.eot");
-  src: url("./fonts/suit-regular.eot?#iefix") format('embedded-opentype'), url("./fonts/suit-regular.woff") format('woff'), url("./fonts/suit-regular.ttf") format('truetype'), url("./fonts/suit-regular.svg#suit-regular") format('svg');
+  src: url('./fonts/suit-regular.eot');
+  src: url('./fonts/suit-regular.eot?#iefix') format('embedded-opentype'),
+    url('./fonts/suit-regular.woff') format('woff'),
+    url('./fonts/suit-regular.ttf') format('truetype'),
+    url('./fonts/suit-regular.svg#suit-regular') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -11,10 +14,10 @@
   -moz-border-radius: 0.8em;
   -webkit-border-radius: 0.8em;
   border-radius: 0.8em;
-  -moz-box-shadow: 0 0 5px rgba(0,0,0,0.5);
-  -webkit-box-shadow: 0 0 5px rgba(0,0,0,0.5);
-  box-shadow: 0 0 5px rgba(0,0,0,0.5);
-  float: left;
+  -moz-box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  display: inline-block;
   width: 16em;
   height: 22.4em;
   margin: 0 1.2em 1.2em 0;
