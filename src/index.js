@@ -1,8 +1,5 @@
 import './playingcards.css';
-import {suits, ranks} from "./constants"
-import {Card} from "./card"
+import { RANKS, SUITS } from './constants';
+import { Card } from './components/card';
 
-
-export {
-  suits, ranks, Card,
-};
+export { RANKS, SUITS, Card };
