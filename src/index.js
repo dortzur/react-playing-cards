@@ -1,4 +1,3 @@
-import './playingcards.css';
 import { RANKS, SUITS } from './constants';
 import { Card } from './components/card';
 
