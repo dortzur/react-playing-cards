@@ -20,7 +20,7 @@
   display: inline-block;
   width: 16em;
   height: 22.4em;
-  margin: 0 1.2em 1.2em 0;
+  margin: 0;
   position: relative;
   z-index: 2;
 }
