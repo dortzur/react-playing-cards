@@ -8,15 +8,19 @@ const isFaceCard = (rank) => ['king', 'queen', 'jack'].includes(rank.name);
 
 export class Card extends React.PureComponent {
   static propTypes = {
+    size: PropTypes.number,
     rank: PropTypes.string,
     suit: PropTypes.string,
   };
+  static defaultProps = {
+    size: 10,
+  };
   render() {
-    const { rank, suit } = this.props;
+    const { rank, suit, size } = this.props;
     const card = getCard(rank, suit);
     if (isFaceCard(card.rank)) {
-      return <FaceCard card={card} />;
+      return <FaceCard card={card} size={size} />;
     }
-    return <NumberCard card={card} />;
+    return <NumberCard card={card} size={size} />;
   }
 }

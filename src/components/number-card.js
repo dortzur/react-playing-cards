@@ -7,11 +7,14 @@ import cx from 'classnames';
 export class NumberCard extends React.PureComponent {
   static propTypes = {
     card: PropTypes.object,
+    size: PropTypes.number.isRequired,
   };
   render() {
-    const { card } = this.props;
+    const { card, size } = this.props;
+    const style = size === 10 ? {} : { transform: `scale(${size / 10})` };
+
     return (
-      <div className={styles.card}>
+      <div style={style} className={styles.card}>
         <div
           className={cx(
             styles[`card-${card.rank.name}`],
