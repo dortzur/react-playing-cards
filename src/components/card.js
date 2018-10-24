@@ -16,11 +16,11 @@ export class Card extends React.PureComponent {
     size: 10,
   };
   render() {
-    const { rank, suit, size } = this.props;
+    const { rank, suit, size, ...props } = this.props;
     const card = getCard(rank, suit);
     if (isFaceCard(card.rank)) {
-      return <FaceCard card={card} size={size} />;
+      return <FaceCard card={card} size={size} {...props} />;
     }
-    return <NumberCard card={card} size={size} />;
+    return <NumberCard card={card} size={size} {...props} />;
   }
 }

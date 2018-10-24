@@ -7,12 +7,16 @@ export class FaceCard extends React.PureComponent {
   static propTypes = {
     card: PropTypes.object,
     size: PropTypes.number.isRequired,
+    className: PropTypes.string,
+  };
+  static defaultProps = {
+    className: '',
   };
   render() {
-    const { card, size } = this.props;
+    const { card, size, className } = this.props;
     const style = size === 10 ? {} : { transform: `scale(${size / 10})` };
     return (
-      <div style={style} className={cx(styles.card)}>
+      <div style={style} className={cx(styles.card,className)}>
         <div
           className={cx(
             styles[`card-${card.rank.name}`],
