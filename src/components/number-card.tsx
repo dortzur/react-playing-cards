@@ -5,7 +5,7 @@ import cx from 'classnames';
 import { Card } from '../utils/card-utils';
 
 interface Props {
-  className: string,
+  className?: string,
   size: number,
   card: Card
 }

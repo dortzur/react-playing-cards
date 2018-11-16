@@ -17,7 +17,7 @@ const externals = isDev
     },
   };
 module.exports = {
-  entry: isDev ? './demo/index.js' : './src/index.js',
+  entry: isDev ? './demo/index.tsx' : './src/index.ts',
   output: {
     path: path.resolve(__dirname, 'lib'),
     filename: 'index.js',

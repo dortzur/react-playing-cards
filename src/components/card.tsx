@@ -11,7 +11,7 @@ const isFaceCard = (rank: CardRank) => ['king', 'queen', 'jack'].includes(rank.n
 interface Props {
   rank: RANKS,
   suit: SUITS,
-  className: string,
+  className?: string,
   size: number
 }
 
