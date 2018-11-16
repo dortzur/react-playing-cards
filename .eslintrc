@@ -52,16 +52,6 @@
     "arrow-parens": "off",
     "object-curly-spacing": "off",
     "require-jsdoc": "off",
-    "no-unused-vars": "off",
-    "max-len": [
-      2,
-      {
-        "code": 80,
-        "tabWidth": 2,
-        "ignoreUrls": true,
-        "ignoreComments": true,
-        "ignoreStrings": true
-      }
-    ]
+    "no-unused-vars": "off"
   }
 }

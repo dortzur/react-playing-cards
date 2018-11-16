@@ -139,7 +139,12 @@ const cardRanks: CardRanks = {
   },
 };
 
-export const getCard = (rank: RANKS, suit: SUITS) => ({
+export interface Card {
+  rank: CardRank,
+  suit: CardSuit
+}
+
+export const getCard = (rank: RANKS, suit: SUITS): Card => ({
   rank: cardRanks[rank],
   suit: cardSuits[suit],
 });
