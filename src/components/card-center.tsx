@@ -1,5 +1,4 @@
 import React from 'react';
-// @ts-ignore
 import styles from '../playingcards.css';
 import cx from 'classnames';
 import { Card } from '../utils/card-utils';
@@ -174,6 +173,6 @@ export const NumberCardCenter = (props: Props) => {
           </span>
       );
     default:
-      throw new Error('unsupported rank');
+      throw new Error('unsupported card');
   }
 };

@@ -26,7 +26,7 @@ module.exports = {
     globalObject: 'this',
   },
   resolve: {
-    extensions: ['.ts', '.js', '.json', 'ts', 'tsx'],
+    extensions: ['.ts', '.js', '.json', '.jsx', '.tsx'],
   },
   externals,
   module: {
@@ -52,8 +52,10 @@ module.exports = {
         use: [
           MiniCssExtractPlugin.loader,
           {
-            loader: 'css-loader',
+            loader: 'typings-for-css-modules-loader',
             options: {
+              namedExport: true,
+              camelCase:true,
               modules: true,
               localIdentName: 'rpc__[local]',
             },

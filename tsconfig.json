@@ -1,5 +1,6 @@
 {
   "compilerOptions": {
+    "allowJs": false,
     "noImplicitReturns": true,
     "noImplicitThis": true,
     "strictNullChecks": true,
