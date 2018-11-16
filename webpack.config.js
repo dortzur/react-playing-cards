@@ -7,15 +7,15 @@ const isDev = process.env.NODE_ENV === 'development';
 const externals = isDev
   ? {}
   : {
-      react: {
-        commonjs: 'react',
-        commonjs2: 'react',
-      },
-      'prop-types': {
-        commonjs: 'prop-types',
-        commonjs2: 'prop-types',
-      },
-    };
+    'react': {
+      commonjs: 'react',
+      commonjs2: 'react',
+    },
+    'prop-types': {
+      commonjs: 'prop-types',
+      commonjs2: 'prop-types',
+    },
+  };
 module.exports = {
   entry: isDev ? './demo/index.js' : './src/index.js',
   output: {
