@@ -15,3 +15,4 @@ export enum RANKS {
   QUEEN = 'Q',
   KING = 'K',
 }
+
