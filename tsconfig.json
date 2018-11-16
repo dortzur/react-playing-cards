@@ -6,8 +6,6 @@
     "noUnusedLocals": true,
     "module": "esnext",
     "moduleResolution": "node",
-    "allowJs": true,
-    "noEmit": true,
     "strict": true,
     "pretty": true,
     "suppressImplicitAnyIndexErrors": true,
@@ -27,9 +25,12 @@
     "forceConsistentCasingInFileNames": true,
     "jsx": "react",
     "noImplicitAny": true,
+    "outDir": "./lib",
     "removeComments": true,
     "preserveConstEnums": true,
-    "outFile": "../../built/local/tsc.js",
+    "emitDeclarationOnly": true,
+    "declaration": true,
+    "declarationDir": "./lib",
     "sourceMap": true
   },
   "include": [
