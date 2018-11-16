@@ -25,11 +25,14 @@ module.exports = {
     library: 'reactPlayingCards',
     globalObject: 'this',
   },
+  resolve: {
+    extensions: ['.ts', '.js', '.json', 'ts', 'tsx'],
+  },
   externals,
   module: {
     rules: [
       {
-        test: /\.js$/,
+        test: /\.(js|jsx|mjs|ts|tsx)$/,
         exclude: /node_modules/,
         use: {
           loader: 'babel-loader',
