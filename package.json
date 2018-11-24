@@ -9,7 +9,8 @@
     "test": "jest",
     "dev": "NODE_ENV=development webpack-dev-server --mode development --open",
     "build": "NODE_ENV=production webpack --mode production && tsc",
-    "prepublish": "npm run build"
+    "prepublish": "npm run build",
+    "release": "release-it"
   },
   "files": [
     "lib",
