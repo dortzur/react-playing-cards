@@ -10,7 +10,8 @@
     "dev": "NODE_ENV=development webpack-dev-server --mode development --open",
     "build": "NODE_ENV=production webpack --mode production && tsc",
     "prepublish": "npm run build",
-    "release": "release-it"
+    "release-manual": "release-it",
+    "release": "npm run release-manual -- -n"
   },
   "files": [
     "lib",
